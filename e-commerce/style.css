@@ -488,6 +488,60 @@ transition: all 0.2s ease 0s;
 }
 
 
+.features-section{
+  max-width: 1440px;
+  margin: auto;
+  padding: 48px 160px;
+  height: 50vh;
+}
+
+.features-section>.features-cards-container{
+  display: grid;
+  grid-template-rows: repeat(1,1fr);
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+
+}
+
+.features-section>.features-cards-container>.features-card{
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: rgba(243, 245, 247, 1);
+}
+
+.features-section>.features-cards-container>.features-card>.img-container{
+  width: 40px;
+  height: 40px;
+}
+
+.features-section>.features-cards-container>.features-card>.img-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.features-section>.features-cards-container>.features-card>.card-content{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "poppins", sans-serif;
+
+}
+
+.features-section-para-one{
+  font-size: 20px;
+  font-weight: 500;
+ 
+}
+
+.features-section-para-two{
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(108, 114, 117, 1);
+  
+}
+
 
 
 
@@ -620,6 +674,11 @@ position: relative;
 .product-section>.heading-section{
   margin-right: 32px;
 }
+
+.features-section>.features-cards-container{
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr);
+}
 }
 
 @media (max-width: 1024px) {
@@ -643,7 +702,20 @@ position: relative;
     position: absolute;
     display: block;
    bottom: -60px;
-    padding: 40px 0px;
+   margin: 32px 0px;
+  }
+
+  .features-section>.features-cards-container{
+    gap: 16px;
+  }
+
+  .features-section-para-one{
+    font-size: 16px;
+  }
+
+  .features-section>.features-cards-container>.features-card{
+    padding: 32px 16px;
+
   }
 }
 
@@ -663,6 +735,9 @@ position: relative;
     max-width: 100%;
   }
 
+  .features-section{
+    padding: 48px 32px;
+  }
 
 }
 
