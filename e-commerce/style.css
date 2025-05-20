@@ -132,7 +132,7 @@
 
 
 .header-section > nav > ul > li  {
-   font-size: 14px;
+   font-size: 16px;
   font-weight: 500;
   font-family: "Space Grotesk", sans-serif;
     transition: all 0.3s ease 0s;
@@ -147,13 +147,13 @@
 
 .header-section>nav>ul>li:hover{
 
-  transform: scale(1.2);
+  transform: scale(1.1);
   border-bottom: 1px solid rgb(4, 107, 29);
   padding-bottom: 3px;
 
 }
 
-#active {
+.header-section>nav>ul>li>.active {
   color: black;
   border: none;
 }
@@ -1426,15 +1426,15 @@ footer>.bottom-footer>.icons>a{
   .header-section > .website-logo {
     gap: 5px;
   }
-
+/* 
   .header-section > .website-logo >a {
     font-size: 16px;
     font-weight: 500;
-  }
+  } */
 
-  .header-section > .website-logo > .fa-bars {
+  /* .header-section > .website-logo > .fa-bars {
     font-size: 14px;
-  }
+  } */
 
   .header-section > .icons > .first-icons {
     display: none;

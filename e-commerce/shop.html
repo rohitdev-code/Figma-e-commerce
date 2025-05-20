@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GLOBAL CSS LINK -->
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+    <!-- SHOP CSS LINK -->
+
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- banner section start from here -->
+    <div class="banner">
+      <div class="banner-main-content">
+        <div class="logo-container">
+          <img src="assets/Vector (1).png" alt="logo-svg" loading="lazy" />
+        </div>
+
+        <p>30% off storewide — Limited time!</p>
+
+        <a href="#">
+          <span>Shop Now</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="banner-cross-logo-container">
+        <img src="assets/Union.png" alt="logo-svg" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- banner section ends from here -->
+
+    <!-- HEADER SECTION START FROM-->
+
+    <header class="header-section">
+      <div class="website-logo">
+        <i class="fa-solid fa-bars"></i>
+        <a href="#" target="_blank">3legant.</a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="/e-commerce/index.html" id="active" target="_blank">Home</a></li>
+          <li><a href="/e-commerce/shop.html" target="_blank" class="active">Shop</a></li>
+          <li><a href="/e-commerce/product.html" target="_blank">Product</a></li>
+          <li><a href="/e-commerce/contactus.html" target="_blank">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <div class="first-icons">
+          <i class="fa-solid fa-magnifying-glass icon"></i>
+          <i class="fa-regular fa-user icon"></i>
+        </div>
+
+        <div class="last-icons">
+          <i class="fa-solid fa-store icon"></i>
+          <span class="icon"> 2 </span>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER SECTION ENDS FROM HERE -->
+
+    <!-- MAIN SECTION START FROM HERE -->
+<main>
+  <!-- SHOP HERO SECTION START FROM HERE -->
+
+     <section class="shop-hero-section">
+<div class="img-container">
+
+  <img src="assets/shop-hero-img.png" alt="image" loading="lazy">
+
+  <div class="content">
+
+    <h3>Shop Page</h3>
+    <p>Let’s design the place you always imagined.</p>
+  </div>
+</div>
+     </section>
+
+    <!-- SHOP HERO SECTION ENDS FROM HERE -->
+
+
+
+    <!-- PRODUCT SECTION-START FROM HERE -->
+
+    <section class="shop-product-section">
+      
+      <div class="sidebar">
+
+<div class="heading">
+<i class="fa-solid fa-bars"></i>
+<h4>Filter</h4>
+</div>
+
+
+<div class="filter-section">
+<h4>CATEGORIES</h4>
+
+
+  <ul>
+    <li>All room</li>
+    <li>Levingroom</li>
+    <li>Bedroom</li>
+    <li>Bathroom</li>
+    <li>Kitchen</li>
+    <li>Dining</li>
+    <li>Outdoor</li>
+  </ul>
+
+</div>
+
+<div class="price-section">
+<h4>PRICE</h4>
+<div class="prices">
+  <div class="lable-checkbox">
+  <label for="all-price">All Price</label>
+  <input type="checkbox" name="allprice" id="all-price">
+  </div>
+
+
+    <div class="lable-checkbox">
+  <label for="ze-t-nn">$0.00 - 99.99</label>
+  <input type="checkbox" name="ze-t-nn" id="ze-t-nn">
+  </div>
+
+    <div class="lable-checkbox">
+  <label for="hu-t-onn">$100.00 - 199.99</label>
+  <input type="checkbox" name="hu-t-onn" id="hu-t-onn">
+  </div>
+
+
+    <div class="lable-checkbox">
+  <label for="tw-t-tnn">$200.00 - 299.99</label>
+  <input type="checkbox" name="tw-t-tnn" id="tw-t-tnn">
+  </div>
+
+    <div class="lable-checkbox">
+  <label for="th-ttnn">$300.00 - 399.99</label>
+  <input type="checkbox" name="th-ttnn" id="th-ttnn">
+  </div>
+
+    <div class="lable-checkbox">
+  <label for="four-pluse">$400.00+</label>
+  <input type="checkbox" name="four-pluse" id="four-pluse">
+  </div>
+
+   
+</div>
+</div>
+      </div>
+
+
+
+      <div class="grid-product">
+
+<div class="header">
+
+  <h4>Living Room</h4>
+
+  <div class="content">
+
+ 
+  <p>
+    <span>Sort by</span>
+    <i class="fa-solid fa-angle-down"></i>
+  </p>
+
+
+<div class="shop-product-icons">
+
+  <div class="icon">
+<i class="fa-solid fa-grip headicon"></i>
+  </div>
+<div class="icon"><i class="fa-solid fa-border-all headicon"></i></div>
+<div class="icon"><i class="fa-solid fa-grip-lines-vertical headicon"></i></div>
+<div class="icon"><i class="fa-solid fa-grip-lines headicon"></i></div>
+
+
+
+</div>
+</div>
+
+ </div>
+
+<div class="shop-cards">
+
+  <div class="shop-card">
+    <div class="img-container">
+              <img
+                src="assets/Image Placeholder 3.jpg"
+                alt="image"
+                loading="lazy"
+              />
+
+              <div class="shop-badge">
+                <p>New</p>
+                <p>-50%</p>
+              </div>
+
+              <div class="shop-heart-container">
+                <img src="assets/Line.png" alt="svg" loading="lazy" />
+              </div>
+
+              <button>Add to cart</button>
+            </div>
+
+            <div class="shop-lower-content">
+              <div class="star-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <h4>Loveseat Sofa</h4>
+
+              <p>$199.00 <del>$400.00</del></p>
+            </div>
+  </div>
+
+  <div class="shop-card">
+    <div class="img-container">
+              <img
+                src="assets/Image Placeholder 4.png"
+                alt="image"
+                loading="lazy"
+              />
+
+              <div class="shop-badge">
+                <p>New</p>
+                <p>-50%</p>
+              </div>
+
+              <div class="shop-heart-container">
+                <img src="assets/Line.png" alt="svg" loading="lazy" />
+              </div>
+
+              <button>Add to cart</button>
+            </div>
+
+            <div class="shop-lower-content">
+              <div class="star-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <h4>Loveseat Sofa</h4>
+
+              <p>$199.00 <del>$400.00</del></p>
+            </div>
+  </div>
+
+  <div class="shop-card">
+    <div class="img-container">
+              <img
+                src="assets/shop-table.png"
+                alt="image"
+                loading="lazy"
+              />
+
+              <div class="shop-badge">
+                <p>New</p>
+                <p>-50%</p>
+              </div>
+
+              <div class="shop-heart-container">
+                <img src="assets/Line.png" alt="svg" loading="lazy" />
+              </div>
+
+              <button>Add to cart</button>
+            </div>
+
+            <div class="shop-lower-content">
+              <div class="star-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <h4>Loveseat Sofa</h4>
+
+              <p>$199.00 <del>$400.00</del></p>
+            </div>
+  </div>
+
+  <div class="shop-card">
+    <div class="img-container">
+              <img
+                src="assets/Image Placeholder 4.png"
+                alt="image"
+                loading="lazy"
+              />
+
+              <div class="shop-badge">
+                <p>New</p>
+                <p>-50%</p>
+              </div>
+
+              <div class="shop-heart-container">
+                <img src="assets/Line.png" alt="svg" loading="lazy" />
+              </div>
+
+              <button>Add to cart</button>
+            </div>
+
+            <div class="shop-lower-content">
+              <div class="star-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <h4>Loveseat Sofa</h4>
+
+              <p>$199.00 <del>$400.00</del></p>
+            </div>
+  </div>
+
+   <div class="shop-card">
+    <div class="img-container">
+              <img
+                src="assets/Image Placeholder 5.png"
+                alt="image"
+                loading="lazy"
+              />
+
+              <div class="shop-badge">
+                <p>New</p>
+                <p>-50%</p>
+              </div>
+
+              <div class="shop-heart-container">
+                <img src="assets/Line.png" alt="svg" loading="lazy" />
+              </div>
+
+              <button>Add to cart</button>
+            </div>
+
+            <div class="shop-lower-content">
+              <div class="star-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <h4>Loveseat Sofa</h4>
+
+              <p>$199.00 <del>$400.00</del></p>
+            </div>
+  </div>
+
+  <div class="shop-card">
+    <div class="img-container">
+              <img
+                src="assets/Image Placeholder 4.png"
+                alt="image"
+                loading="lazy"
+              />
+
+              <div class="shop-badge">
+                <p>New</p>
+                <p>-50%</p>
+              </div>
+
+              <div class="shop-heart-container">
+                <img src="assets/Line.png" alt="svg" loading="lazy" />
+              </div>
+
+              <button>Add to cart</button>
+            </div>
+
+            <div class="shop-lower-content">
+              <div class="star-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <h4>Loveseat Sofa</h4>
+
+              <p>$199.00 <del>$400.00</del></p>
+            </div>
+  </div>
+
+  <div class="shop-card">
+    <div class="img-container">
+              <img
+                src="assets/shop-table.png"
+                alt="image"
+                loading="lazy"
+              />
+
+              <div class="shop-badge">
+                <p>New</p>
+                <p>-50%</p>
+              </div>
+
+              <div class="shop-heart-container">
+                <img src="" alt="svg" loading="lazy" />
+              </div>
+
+              <button>Add to cart</button>
+            </div>
+
+            <div class="shop-lower-content">
+              <div class="star-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <h4>Loveseat Sofa</h4>
+
+              <p>$199.00 <del>$400.00</del></p>
+            </div>
+  </div>
+
+  <div class="shop-card">
+    <div class="img-container">
+              <img
+                src="assets/Image Placeholder 4.png"
+                alt="image"
+                loading="lazy"
+              />
+
+              <div class="shop-badge">
+                <p>New</p>
+                <p>-50%</p>
+              </div>
+
+              <div class="shop-heart-container">
+                <img src="assets/Line.png" alt="svg" loading="lazy" />
+              </div>
+
+              <button>Add to cart</button>
+            </div>
+
+            <div class="shop-lower-content">
+              <div class="star-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <h4>Loveseat Sofa</h4>
+
+              <p>$199.00 <del>$400.00</del></p>
+            </div>
+  </div>
+
+   <div class="shop-card">
+    <div class="img-container">
+              <img
+                src="assets/Image Placeholder 5.png"
+                alt="image"
+                loading="lazy"
+              />
+
+              <div class="shop-badge">
+                <p>New</p>
+                <p>-50%</p>
+              </div>
+
+              <div class="shop-heart-container">
+                <img src="assets/Line.png" alt="svg" loading="lazy" />
+              </div>
+
+              <button>Add to cart</button>
+            </div>
+
+            <div class="shop-lower-content">
+              <div class="star-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <h4>Loveseat Sofa</h4>
+
+              <p>$199.00 <del>$400.00</del></p>
+            </div>
+  </div>
+
+</div>
+      </div>
+    </section>
+    <!-- PRODUCT SECTION-ENDS FROM HERE -->
+
+     <!-- newslatter section start from here -->
+
+    <section class="newslatter-section">
+
+    <div>
+  <div class="content">
+        <h2>Join Our Newsletter</h2>
+        <p>Sign up for deals, new products and promotions</p>
+      </div>
+
+      <form action="" id="form-sec">
+
+        <div class="input-box">
+          <label for="email">
+            <i class="fa-regular fa-envelope"></i>
+          </label>
+   
+        <input type="email" name="email" id="email" placeholder="Email address">
+        </div>
+     
+<button>
+  Signup
+</button>
+
+        
+      </form>
+    </div>
+    
+    </section>
+    <!-- newslatter section ends from here -->
+
+</main>
+
+<!-- MAIN SECTION ENDS FROM HERE -->
+
+
+ <!-- FOOTER SECTION START FROM HERE -->
+     <footer>
+      <div class="top-footer">
+
+        <div class="content">
+          <a href="#">3legant</a>
+          <div class="line"></div>
+          <p>Gift & Decoration Store</p>
+        </div>
+
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="bottom-footer">
+
+        <div class="content">
+          <p>Copyright © 2023 3legant. All rights reserved</p>
+          <p>Privecy policy</p>
+          <p>Terms of uses</p>
+
+        </div>
+
+
+        <div class="icons">
+
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" >     <i class="fa-brands fa-facebook-f"></i></a>
+     
+        <a href="https://www.youtube.com/" target="_blank"> <i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+     </footer>
+    <!-- FOOTER SECTION ENDS FROM HERE -->
+  
+
+</body>
+</html> 
