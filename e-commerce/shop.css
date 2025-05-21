@@ -1,3 +1,5 @@
+
+/* SHOP HERE SECTION CSS START FROM HERE */
 .shop-hero-section{
     max-width: 1440px;
     margin: auto;
@@ -7,6 +9,9 @@
 
 .shop-hero-section>.img-container{
     max-width: 1120px;
+      min-width: 309px;
+    max-height: 392px;
+    min-height: 309px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,11 +21,11 @@
 
 .shop-hero-section>.img-container>img{
 
-    max-width: 1120px;
-    min-width: 309px;
-    max-height: 392px;
+    width: 100%;
+   min-width: 309px;
+    height: 100%;
     min-height: 309px;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 
@@ -29,8 +34,9 @@
     flex-direction: column;
     gap: 24px;
     position: absolute;
-    align-items: center;
     text-align: center;
+  padding: 12px;
+    /* if i give top right bottom and left property then it will override the flex center property */
 }
 
 
@@ -48,7 +54,10 @@
 }
 
 
+/* SHOP-HERO SECTION CSS ENDS FROM HERE */
 
+
+/* SHOP-PRODUCT SECTION START FROM HERE */
 .shop-product-section{
     max-width: 1440px;
     margin: auto;
@@ -57,35 +66,63 @@
     gap: 24px;
 }
 
+/* SIDEBAR SECTION START FROM HERE */
+
 .sidebar{
     display: flex;
     flex-direction: column;
     gap: 32px;
-    width: 262px;
+    width: 100%;
     max-width: 262px;
+    margin-top: 7px;
 }
 
 .sidebar>.heading{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar>.heading>.filter{
+      display: flex;
+      cursor: pointer;
     gap: 8px;
     align-items: center;
 }
 
-
-
-
-
-.sidebar>.heading>h4{
+.sidebar>.heading>.filter>h4{
     font-size: 20px;
     font-weight: 600;
     font-family: "inter", sans-serif;
 }
+
+
+.sidebar>.heading>.icons{
+    display: none;
+}
+
+
+.sidebar>.heading>.icons>.icon{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 40px;
+      border: 1px solid rgba(243, 245, 247, 1);
+        cursor: pointer;
+}
+
+.sidebar>.heading>.icons>.icon:hover{
+background-color: rgba(234, 234, 234, 1);
+}
+  
 
 .sidebar>.filter-section{
     display: flex;
     flex-direction: column;
     gap: 16px;
     border-bottom: 1px;
+ 
 }
 
 
@@ -102,6 +139,7 @@
     flex-direction: column;
     gap: 12px;
     list-style-type: none;
+    height: 226px;
        font-size: 16px;
     font-weight: 600;
         font-family: "inter", sans-serif;
@@ -126,6 +164,8 @@
     border-radius: 100px;
 }
 
+/* why my thumb is not show ????????????????? */
+
 
 
 .sidebar>.filter-section>ul>li{
@@ -144,6 +184,8 @@
     flex-direction: column;
     gap: 16px;
     padding-bottom: 1px ;
+
+    /* question ask why max-width property does not work  */
 }
 
 .sidebar>.price-section>h4{
@@ -175,21 +217,24 @@ gap: 8px;
 .sidebar>.price-section>.prices>.lable-checkbox>input{
 width: 24px;
 height: 24px;
-background-color: black;
-color: rgba(252, 252, 253, 1);
-border: 1.5px solid rgba(108, 114, 117, 1);
-cursor: pointer;
-}
+cursor: pointer; 
+
+} 
 
 .sidebar>.price-section>.prices>.lable-checkbox:hover label{
     color: black;
 }
 
+
+/* SIDEBAR SECTION ENDS FROM HERE */
+
+
+/* GRID-PRODUCT SECTION START FROM HERE */
 .shop-product-section>.grid-product{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 834px;
+    width: 100%;
     max-width: 834px;
 }
 
@@ -219,6 +264,7 @@ cursor: pointer;
        font-size: 16px;
     font-weight: 600;
     font-family: "inter", sans-serif;
+    cursor: pointer;
 }
 
 
@@ -226,7 +272,6 @@ cursor: pointer;
     display: flex;
     align-items: center;
   
-
 }
 
 .shop-product-section>.grid-product>.header>.content>.shop-product-icons>.icon{
@@ -236,6 +281,7 @@ cursor: pointer;
     width: 46px;
     height: 40px;
       border: 1px solid rgba(243, 245, 247, 1);
+      cursor: pointer;
 }
 
 
@@ -251,17 +297,25 @@ font-size: 1.5rem;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(3,1fr);
     gap: 24px;
+    /* justify-items: center; */
 }
 
 .shop-product-section>.grid-product>.shop-cards>.shop-card{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    max-width: 262px;
+    width: 100%;
+    /* height: 100%; */
+    transition: all 0.2s ease 0s;
 }
 
+.shop-product-section>.grid-product>.shop-cards>.shop-card:hover{
+    transform: scale(1.08);
+}
+
+
 .shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container{
-    max-width: 262px;
+    width: 100%;
     min-width: 152px;
     position: relative;
     max-height: 349px;
@@ -269,11 +323,10 @@ font-size: 1.5rem;
 }
 
 .shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container>img{
-    max-width: 100%;
-    min-width: 100%;
-    max-height: 100%;
-    min-height: 100%;
+    width: 100%;
+    min-width: 152px;
     height: 100%;
+    min-height: 203px;
 }
 
 .shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container>.shop-badge{
@@ -316,7 +369,6 @@ width: 2rem;
 height: 2rem;
 border-radius: 50%;
 background-color: rgba(255, 255, 255, 1);
-opacity: 0;
 transition: all 0.2s ease 0s;
 }
 
@@ -325,9 +377,7 @@ transition: all 0.2s ease 0s;
     height: 20px;
 }
 
-.shop-product-section>.grid-product>.shop-cards>.shop-card:hover .shop-heart-container{
- opacity: 1;
-}
+
 
 .shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container>button{
     position: absolute;
@@ -343,6 +393,12 @@ transition: all 0.2s ease 0s;
     font-weight: 500;
     font-family: "inter", sans-serif;
     cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container>button:hover{
+    background-color: rgb(8, 167, 8);
 }
 
 
@@ -379,7 +435,49 @@ transition: all 0.2s ease 0s;
     color: rgba(108, 114, 117, 1);
 }
 
+.shop-product-section>.grid-product>.shop-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input[ type="checkbox"]{
+    accent-color: black;
+}
+
+.shop-product-section>.grid-product>.shop-button>button{
+padding: 6px 40px;
+border: 1px solid black;
+background-color: transparent;
+border-radius: 80px;
+  font-size: 16px;
+    font-weight: 600;
+    font-family: "inter", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    outline: none;
+}
+
+.shop-product-section>.grid-product>.shop-button>button:hover{
+    background-color: rgb(54, 195, 246);
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+
+@media (max-width:1250px) {
+    
+    .shop-product-section>.grid-product>.shop-cards{
+    display: grid;
+    grid-template-rows: repeat(auto,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+}
+
 @media (max-width:1024px) {
+
+    /* SHOP HERE SECTION CSS START FROM HERE */
     .shop-hero-section{
         padding: 0px 32px;
     }
@@ -391,9 +489,19 @@ transition: all 0.2s ease 0s;
       .shop-hero-section>.img-container>.content{
         gap: 20px;
     }
+
+    /* SHOP HERE SECTION CSS ENDS FROM HERE */
+
+    .shop-product-section{
+        padding: 32px ;
+    }
 }
 
 @media (max-width:768px) {
+
+ 
+
+    /* SHOP HERE SECTION CSS START FROM HERE */
 
     .shop-hero-section>.img-container>.content{
         gap: 16px;
@@ -405,4 +513,121 @@ transition: all 0.2s ease 0s;
      .shop-hero-section>.img-container>.content>p{
        font-size: 16px;
     }
+
+    /* SHOP HERE SECTION CSS ENDS FROM HERE */
+
+
+       .shop-product-section{
+        flex-direction: column;
+    
+    }
+    
+.shop-product-section>.sidebar{
+width: 100%;
+max-width: 1440px;
+}
+
+.sidebar>.heading{
+  width: 100%;
+  border-top: 1px solid rgba(232, 236, 239, 1);
+  border-bottom:  1px solid rgba(232, 236, 239, 1) ;
+  padding: 8px 0px;
+  margin: auto;
+}
+
+    .sidebar>.heading>.icons{
+        display: flex;
+    }
+
+
+
+    .shop-product-section>.sidebar>.filter-section{
+        display: none;
+    }
+
+     .shop-product-section>.sidebar>.price-section{
+        display: none;
+     }
+
+        /* .shop-product-section>.grid-product{
+            align-items: center;
+        }
+
+     .shop-product-section>.grid-product>.header{
+        width: 85vw;
+        margin: auto;
+     } */
+
+.shop-product-section>.grid-product>.header>.content>.shop-product-icons>.icon{
+ display: none;
+}
+
+}
+
+@media (max-width:450px) {
+    .shop-product-section>.grid-product>.shop-cards{
+    gap: 8px;
+
+}
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card{
+    margin-top: 8px;
+}
+
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container>button{
+   font-size: 14px;
+}
+
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container>.shop-badge{
+    gap: 6px;
+}
+
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container>.shop-badge>p{
+    width: 60px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  
+}
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container>.shop-badge>p:last-child{
+    background-color: rgba(56, 203, 137, 1);
+    color: rgba(254, 254, 254, 1);
+}
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container>.shop-heart-container{
+width: 28;
+height: 28px;
+}
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.img-container>.shop-heart-container>img{
+    width: 18px;
+    height: 18px;
+}
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.shop-lower-content{
+    gap: 8px;
+}
+
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.shop-lower-content>.shop-star-icon{
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.shop-lower-content>h4{
+        font-size: 14px;
+  
+}
+
+.shop-product-section>.grid-product>.shop-cards>.shop-card>.shop-lower-content>p{
+    gap: 10px;
+  font-size: 12px;
+    font-weight: 400;
+}
+
 }
