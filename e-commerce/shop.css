@@ -72,10 +72,13 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    width: 100%;
+    /* flex: 1 1 262px; */
+width: 262px;
     max-width: 262px;
     margin-top: 7px;
 }
+
+/* if container is flex and you set the smax-width property to its container then it work width property and you want to solve this issue you apply width then max-width and also apply flex 1 1 size 262px then set a max-width  */
 
 .sidebar>.heading{
     display: flex;
@@ -629,5 +632,4 @@ height: 28px;
   font-size: 12px;
     font-weight: 400;
 }
-
 }
