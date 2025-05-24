@@ -331,7 +331,7 @@ background-color:rgb(213, 213, 213);
 
 
 
-.header-section > .website-logo > .fa-bars:focus #header-side-menu{
+.header-section > .website-logo > .fa-bars:hover #header-side-menu{
   display: flex;
 }
 
