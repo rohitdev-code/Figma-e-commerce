@@ -115,6 +115,234 @@
   display: none;
 
 }
+
+
+/* mobile menu start form here */
+
+.header-section > .website-logo > .fa-bars>.side-menu{
+position: fixed;
+top: 0;
+left: 0;
+width: 95vw;
+height: 100vh;
+background-color: #fff;
+padding: 1.5rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+z-index: 5;
+display: none;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>.heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>.heading>.fa-xmark{
+  color: #6C7275;
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>.search-bar{
+  width: 100%;
+  border: 1px solid #6C7275;
+  border-radius: 6px;
+    display: flex;
+  gap: 8px;
+  pad: 16px;
+  padding: 10px 16px;
+  align-items: center;
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>.search-bar>label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>.search-bar>label>.search-icon{
+  color: 6C7275;
+  font-size: 14px;
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>.search-bar>input{
+  border: none;
+  outline: none;
+  width: 100%;
+    font-size: 14px;
+  font-weight: 400;
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>.search-bar>input::placeholder{
+  font-size: 14px;
+  font-weight: 400;
+  color: #6C7275;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>nav{
+width: 100%;
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>nav>ul{
+list-style-type: none;
+display: flex;
+flex-direction: column;
+gap: 16px;
+width: 100%;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>nav>ul>li>a{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2px 16px 1px;
+  border-bottom: 1px solid #E8ECEF;
+  transition: all 0.2s ease 0s;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>nav>ul>li>a:hover{
+  background-color: rgb(213, 213, 213);
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>nav>ul>li>a>.fa-angle-down{
+  font-size: 14px;
+  color: #141718;
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.top-section>nav>ul>li>a>span{
+  font-size: 14px;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  color: #717171;
+}
+
+.top-section>nav>ul>li #active{
+  color: black;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section{
+  display: flex;
+  flex-direction: column;
+gap: 24px;
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section>ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section>ul>li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    border-bottom: 1px solid #E8ECEF;
+  padding: 0px 2px 16px 1px;
+  transition: all 0.2s ease 0s;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section>ul>li>p{
+font-size: 18px;
+font-weight: 500;
+font-family: "inter", sans-serif;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section>ul>li:hover{
+background-color:rgb(213, 213, 213);
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section>ul>li>.icon{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section>ul>li>.icon>.icon-bottom{
+  font-size: 18px;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section>ul>li>.icon>span{
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "inter", sans-serif;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section>.button{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section>.button>button{
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 6px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "inter", sans-serif;
+  cursor: pointer;
+}
+
+
+.header-section > .website-logo >.fa-bars>.side-menu>.bottom-section>.button>.sociel-icon{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 26px;
+  justify-content: center;
+
+}
+
+
+
+.header-section > .website-logo > .fa-bars:focus #header-side-menu{
+  display: flex;
+}
+
+
+
+
+/* mobile menu ends from here */
+
+
+
+
 .header-section > .website-logo >a {
   font-size: 24px;
   font-weight: 500;
