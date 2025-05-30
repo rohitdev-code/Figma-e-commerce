@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "inter", sans-serif;
 }
 
 #link-hover{
@@ -123,7 +124,7 @@
 position: fixed;
 top: 0;
 left: 0;
-width: 95vw;
+width: 70vw;
 height: 100vh;
 background-color: #fff;
 padding: 1.5rem;
